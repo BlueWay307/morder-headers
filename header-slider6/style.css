@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "gilory";
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav a {
+  color: #ffffff;
+  font-family: "gilory";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  pointer-events: all;
+}
+
+#nav img {
+  height: 60px;
+}
+
+#hero {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#heroleft {
+  min-width: 50%;
+  margin-top: 20px;
+}
+
+#heroleft .elem {
+  position: relative;
+  height: 14vh;
+  overflow: hidden;
+}
+
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: "kajiro";
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 7vw;
+}
+
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#heroleft a {
+  margin-top: 100px;
+  text-decoration: none;
+  padding: 0.8vw 2.5vw;
+  font-size: 3vw;
+  color: #000000;
+  background: #ffffff;
+  font-family: "kajiro";
+  pointer-events: all;
+}
+
+#heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 19%;
+  color: #ffffff;
+}
+
+#heroright p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+#heroright p:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+#heroright #imagediv {
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-image: url(https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
